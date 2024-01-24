@@ -1,2 +1,2 @@
-# nft_diplom
+# NFT MARKETPLACE
 НФТ площадка
