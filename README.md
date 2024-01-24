@@ -7,11 +7,21 @@ Welcome to the NFT Platform project, a Django-powered marketplace designed for t
 * **SQLite Database:** The default Django database, SQLite, is employed to manage the data efficiently. It provides a lightweight, serverless, and easy-to-set-up solution for development purposes.
 
 ## Getting Started:
-1. Clone the Repository:
+1. **Clone the Repository:*
    ```
    git clone https://github.com/azazzillo/nft_diplom
    ```
-2. Install
+2. *Install Dependencies:*
    ```
    pip install -r requirements.txt
    ```
+3. *Run Migrations:*
+   ```
+   python manage.py migrate
+   ```
+4. Start the Development Server:
+   ```
+   python manage.py runserver
+   ```
+5. Visit the Platform:
+Open your web browser and navigate to http://localhost:8000 to explore the NFT marketplace.
