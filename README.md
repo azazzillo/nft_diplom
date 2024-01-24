@@ -5,6 +5,8 @@ Welcome to the NFT Platform project, a Django-powered marketplace designed for t
 * **MetaMask Integration:** Seamlessly register and authenticate users through the popular MetaMask cryptocurrency wallet, ensuring a secure and user-friendly experience.
 * **DRF-powered Views:** Utilizing Django Rest Framework, our project employs powerful views to handle various aspects of the NFT marketplace, ensuring efficient data communication and interaction.
 * **SQLite Database:** The default Django database, SQLite, is employed to manage the data efficiently. It provides a lightweight, serverless, and easy-to-set-up solution for development purposes.
+* **Auction-Based Transactions:** Facilitate the buying and selling of NFTs through auction mechanisms, providing a dynamic and engaging way for users to participate in the marketplace.
+* **Custom Blockchain Logic:** Implement your blockchain logic to enhance the security and transparency of transactions within the platform. This custom blockchain logic ensures a decentralized and tamper-resistant environment for NFT trading.
 
 ## Getting Started:
 1. **Clone the Repository:**
