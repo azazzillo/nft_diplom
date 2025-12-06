@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <header>
+        <div class="container">
+            <nav>
+<!-- НА главную страницу -->
+                <a href="index.html" class="brand">M-NFT</a>
+                <ul class="menu">
+                <!-- Ссылки -->
+                <li><a href="../main">Home</a></li>
+                <li><a href="{% url 'nft_all' %}">NFT</a></li>
+                <li><a href="{% url 'start_auction' %}">New Auction</a></li>
+                <li><a href="{% url 'creatte' %}">New NFT</a></li>
+                <li><a href="#">My NFT</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                </ul>
+                <!-- <a href="#" class="btn btn-primary">
+                    Log-In
+                </a> -->
+                <!-- <form action="#" id="metamaskForm" >
+                    <button type="submit" id="loginButton" class="btn btn-primary">Login with MetaMask</button>
+                </form> -->
+                <a class="btn btn-primary" href="{% url 'logoutt' %}">Logout</a>
+                <button class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+<!-- PHOTO -->
+    
+
+<div class="header-body">
+    <!-- PHOTO -->
+    
+            <section class="featured">
+                <div class="heading">
+    <!-- TEXT -->
+                </div>
+                <div class="cards">
+               
+
+                    <div class="card">
+    <!-- PHOTO -->
+                        <a href="/{{nft.id}}"><img class="art-img" src="..{{auction.nft.image.url}}"></a>
+                        <!-- <div class="light"></div> -->
+                        <h3 class="art-title"> {{ nft.title }} </h3>
+
+                        <div class="bid">
+                            <div>
+                                <p>
+                                    Current bid
+                                </p><br>
+                                <h3>
+                                    <i class="fab fa-eutherum"></i>
+    <!-- Тут долэна быть ссылка на текущую ставку -->
+                                    {{auction.current_bid}}
+                                </h3>
+                            </div>
+                            <div>
+    <!-- Данные об окончание (тоже ссылка) -->
+                                <p>Ends in</p>
+                                <h3>{{auction.datetime_finish}}</h3>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    BID!
+                    Current Bid: {{auction.current_bid}} ETH
+                    <form action="">
+                        
+                    </form>
+                </div>
+                
+             
+            </section>
+        </div>
+        </div>
+            
+    </header>
+
+
+
+    <div class="container">
+        <footer>
+            <div>
+                <h2>Degital Agency</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, aliquam iusto ratione quae quidem ex dicta, perspiciatis possimus earum atque accusamus quisquam ea nemo! Reiciendis quod consectetur odit accusamus nisi.</p>
+                <hr>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis reiciendis, exercitationem qui ipsam non molestias unde quaerat sapiente tempore temporibus necessitatibus. Ipsum temporibus harum animi, dolores neque consectetur provident natus?</h3>
+<!-- FORMA -->
+                <form>
+                    <div class="input-wrap">
+                        <input 
+                            type="email"
+                            placeholder="Enter your email"
+                        >
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+            <h3>Quick Links</h3>
+            <ul>
+<!-- ССЫЛКИ -->
+                <li><a href="#">Protocol Explorer</a></li>
+                <li><a href="#">Protocol Explorer</a></li>
+                <li><a href="#">Protocol Explorer</a></li>+
+                <li><a href="#">Protocol Explorer</a></li>+
+                <li><a href="#">Protocol Explorer</a></li>+
+                <li><a href="#">Protocol Explorer</a></li>+
+            </ul>
+        </div>
+        <div>
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+                <li><a href="#">Market Explore</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">FaceBook</a></li>
+                <li><a href="#">FaceBook</a></li>
+            </ul>
+        </div>
+        </footer>
+    </div>
+    <!-- <script src="/static/js/index.js"></script> -->
+</body>
+</html>
